@@ -52,11 +52,3 @@ def annotate_clusters(cluster_gene_dict, LIBARY):
     for cluster in cluster_gene_dict:
         annotated_clusters[cluster] = validate_cluster_genes(cluster_gene_dict[cluster], LIBARY)
     return annotated_clusters
-
-
-LIBARY = prepare_libary()
-gene_def_name_col = "seurat_clusters"
-cluster_def_name_col = "markers"
-
-cluster_gene_dict = read_cluster_genes("cluster_genes.txt", cluster_def_name_col, gene_def_name_col)
-annotate_clusters(cluster_gene_dict, LIBARY)
