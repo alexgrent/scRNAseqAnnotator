@@ -9,5 +9,5 @@ class SCRNAProcessService:
 
 
     @staticmethod
-     def load_clustering_per_resolution(resolution: float):
+    def load_clustering_per_resolution(resolution: float):
          return 4

@@ -88,7 +88,6 @@ class scRNAAnalysis:
 
 
 
-
 EXAMPLE_DATA = pooch.create(
     path=pooch.os_cache("scverse_tutorials"),
     base_url="doi:10.6084/m9.figshare.22716739.v1/",
